@@ -24,14 +24,10 @@ class _DrawerItemListViewState extends State<DrawerItemListView> {
         title: "Wallet Account", image: Assets.imagesWalletAccount),
     const DrawerItemModel(
         title: "My Investments", image: Assets.imagesMyInvestments),
-    // DrawerItemModel(title: "Setting system", image: Assets.imagesSettings),
-    // DrawerItemModel(title: 'Logout account', image: Assets.imagesLogout),
   ];
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
+    return SliverList.builder(
       itemCount: item.length,
       itemBuilder: (context, index) {
         return GestureDetector(
