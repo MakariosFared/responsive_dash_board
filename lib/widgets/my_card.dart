@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:responsive_dash_board/utils/app_images.dart';
 import 'package:responsive_dash_board/utils/app_styles.dart';
@@ -22,6 +23,7 @@ class MyCard extends StatelessWidget {
           ),
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             ListTile(
               contentPadding: const EdgeInsets.only(
@@ -40,7 +42,29 @@ class MyCard extends StatelessWidget {
                 style: AppStyles.styleMedium20(),
               ),
               trailing: SvgPicture.asset(Assets.imagesGallery),
-            )
+            ),
+            const Expanded(child: SizedBox()),
+            Padding(
+              padding: const EdgeInsets.only(right: 24),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Text(
+                    '**** **** **** 0000',
+                    style: AppStyles.styleSemiBold24().copyWith(
+                      color: Colors.white,
+                    ),
+                  ),
+                  Text(
+                    '12/20 - 124',
+                    style: AppStyles.styleRegular16().copyWith(
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 26)
           ],
         ),
       ),
