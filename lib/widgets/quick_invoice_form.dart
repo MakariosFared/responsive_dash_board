@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:responsive_dash_board/widgets/custom_button.dart';
 import 'package:responsive_dash_board/widgets/title_text_field.dart';
 
 class QuickInvoiceForm extends StatelessWidget {
@@ -50,7 +51,14 @@ class QuickInvoiceForm extends StatelessWidget {
               ),
             ),
           ],
-        )
+        ),
+        Row(
+          children: [
+            Expanded(
+              child: CustomButton(),
+            ),
+          ],
+        ),
       ],
     );
   }
