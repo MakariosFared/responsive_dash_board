@@ -16,14 +16,26 @@ class _DrawerItemListViewState extends State<DrawerItemListView> {
   int activeIndex = 0;
 
   final List<DrawerItemModel> item = [
-    const DrawerItemModel(title: "Dashboard", image: Assets.imagesDashboard),
     const DrawerItemModel(
-        title: "My Transaction", image: Assets.imagesMyTransctions),
-    const DrawerItemModel(title: "Statistics", image: Assets.imagesStatistics),
+      title: "Dashboard",
+      image: Assets.imagesDashboard,
+    ),
     const DrawerItemModel(
-        title: "Wallet Account", image: Assets.imagesWalletAccount),
+      title: "My Transaction",
+      image: Assets.imagesMyTransactions,
+    ),
     const DrawerItemModel(
-        title: "My Investments", image: Assets.imagesMyInvestments),
+      title: "Statistics",
+      image: Assets.imagesStatistics,
+    ),
+    const DrawerItemModel(
+      title: "Wallet Account",
+      image: Assets.imagesWalletAccount,
+    ),
+    const DrawerItemModel(
+      title: "My Investments",
+      image: Assets.imagesMyInvestments,
+    ),
   ];
   @override
   Widget build(BuildContext context) {

@@ -47,7 +47,7 @@ class Assets {
 
   /// Assets for imagesMyTransctions
   /// assets/images/my_transctions.svg
-  static const String imagesMyTransctions = "assets/images/my_transctions.svg";
+  static const String imagesMyTransactions = "assets/images/my_transctions.svg";
 
   /// Assets for imagesSettings
   /// assets/images/settings.svg
