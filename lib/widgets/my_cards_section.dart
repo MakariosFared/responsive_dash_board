@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:responsive_dash_board/utils/app_styles.dart';
 import 'package:responsive_dash_board/widgets/dots_indicator.dart';
 import 'package:responsive_dash_board/widgets/my_cards_page_view.dart';
@@ -29,11 +30,14 @@ class _MyCardsSectionState extends State<MyCardsSection> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(
-          width: 420,
-          child: Text(
-            'My Cards',
-            style: AppStyles.styleSemiBold20(),
+        Align(
+          alignment: Alignment.topLeft,
+          child: SizedBox(
+            width: 420,
+            child: Text(
+              'My Cards',
+              style: AppStyles.styleSemiBold20(),
+            ),
           ),
         ),
         const SizedBox(
